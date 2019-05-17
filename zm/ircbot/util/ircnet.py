@@ -29,12 +29,14 @@ class Client:
             self.sendMessageImmde(self._outQueue.get())
 
     def getRecvMessage(self):
-        return self._inQueue.get().decode()
+        return self._inQueue.get()
 
     def recv(self,length):
         with recvLock:
-            msg = self._clientSocket.recv(length)
-            self._inQueue.put(msg)
+            data = self._clientSocket.recv(length).decode()
+            if data.find('PING') != -1:
+                self.sendMessageImmde('PONG ' + data.split()[1] + '\r\n')
+            self._inQueue.put(data)
 
 
     def login(self,nickname,username,realname,chanel):
