@@ -4,4 +4,4 @@ class IoUtil:
     @classmethod
     def print(cls, msg):
         timeStr = time.strftime('%H:%M:%S',time.localtime())
-        print (timeStr +" "+ msg)
+        print (timeStr +" "+ msg,end='')

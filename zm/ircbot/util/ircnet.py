@@ -81,5 +81,5 @@ class Client:
     def getChanel(self,):
         return self._chanel
 
-    def tetNickName(self,):
+    def getNickName(self,):
         return self._nickName
