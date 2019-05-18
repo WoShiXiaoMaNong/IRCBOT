@@ -7,10 +7,10 @@ class ClientHelper:
         self._client = Client(host,port)
 
     def start(self, nickname, username, realname, chanel):
-        IoUtil.print("Start login")
+        IoUtil.print("Start login\r\n")
         self._login(nickname, username, realname, chanel)
-        IoUtil.print("Login finished")
-        IoUtil.print("Robot starting now!")
+        IoUtil.print("Login finished\r\n")
+        IoUtil.print("Robot starting now!\r\n")
         self.handleMessage()
 
     def _login(self, nickname, username, realname, chanel):

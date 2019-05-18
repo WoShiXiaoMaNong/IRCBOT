@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31719041-b426-4742-a9ad-a81200d23ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zm/ircbot/item/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/Handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/read_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/read_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/ircthread/MsgSendThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/util/MsgSendThread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/ircthread/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/handler/WeatherSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zm/ircbot/util/ircnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/util/ircnet.py" afterDir="false" />
     </list>
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="228">
+              <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -34,20 +33,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zm/ircbot/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="133">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zm/ircbot/main.py">
+        <entry file="file://$PROJECT_DIR$/config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="152">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -55,40 +63,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/SharesFormat.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="311" selection-start-line="311" selection-end-line="311" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/read_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="254">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -106,13 +84,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ircnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="186">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/read_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,26 +130,29 @@
       <list>
         <option value="$PROJECT_DIR$/zm/ircbot/thread/MsgSendThread.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/ircthread/MsgSendThread.py" />
-        <option value="$PROJECT_DIR$/zm/ircbot/util/ircnet.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/ircthread/HandleThread.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/util/IOUtil.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/ircthread/Handler.py" />
-        <option value="$PROJECT_DIR$/config/read_config.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/handler/SharesFormat.txt" />
-        <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/zm/ircbot/main.py" />
-        <option value="$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/handler/Handler.py" />
-        <option value="$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py" />
-        <option value="$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py" />
-        <option value="$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py" />
         <option value="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/HandlerInterface.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/WeatherSearch.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py" />
+        <option value="$PROJECT_DIR$/config/config.ini" />
+        <option value="$PROJECT_DIR$/config/read_config.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py" />
+        <option value="$PROJECT_DIR$/zm/ircbot/util/ircnet.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="147" />
-    <option name="y" value="51" />
+    <option name="x" value="152" />
+    <option name="y" value="37" />
     <option name="width" value="1911" />
     <option name="height" value="1170" />
   </component>
@@ -238,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.IrcMsg">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Handler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IRCBOT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -377,7 +370,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="147" y="51" width="1911" height="1170" extended-state="0" />
+    <frame x="152" y="37" width="1911" height="1170" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27976507" />
@@ -385,15 +378,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291506" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43146718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27027026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34362933" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297975" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291506" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291506" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3291506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,6 +394,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -488,33 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ircnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/read_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zm/ircbot/util/MsgSendThread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -543,10 +521,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py">
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="269">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/WeatherSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/read_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -555,45 +584,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zm/ircbot/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="133">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/SharesSearch.py">
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ClientHelpr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/weatherSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/MainHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="254">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/util/ircnet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="186">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

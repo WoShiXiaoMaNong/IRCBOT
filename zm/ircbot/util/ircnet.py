@@ -42,10 +42,10 @@ class Client:
     def login(self,nickname,username,realname,chanel):
         self.setNickName(nickname)
         self.setChanel(chanel)
-        IoUtil.print("Start to connect server . IRC host: %s, port %s" %(self.getHost(),self.getPort() ))
+        IoUtil.print("Start to connect server . IRC host: %s, port %s\r\n" %(self.getHost(),self.getPort() ))
         cs = self._clientSocket
         cs.connect((self.getHost(), self.getPort()))
-        IoUtil.print("Connected!")
+        IoUtil.print("Connected!\r\n")
 
         self.recv(1024)
 

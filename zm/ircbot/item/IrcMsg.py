@@ -61,8 +61,3 @@ class Command:
         elif len(self._command_msg.split(':')) != 2:
             return False
         return True
-
-
-if __name__ == "__main__":
-
-    i = ":MrkkkBot   :tianqi:杭州"

@@ -1,21 +1,24 @@
 import http.client
 from zm.ircbot.util.IOUtil import IoUtil
-import json
+from zm.ircbot.handler.HandlerBase import Handler
 
-class SharesSearch:
+
+class SharesSearch(Handler):
 
     def __init__(self):
+        Handler.__init__(self)
         self._host = "hq.sinajs.cn"
         self._requset = "/list="
 
-    def execute(self, shares_id):
+    def execute(self, irc_msg):
         rst = "我不知道你在说什么"
-        if shares_id == None:
+        shares_id = irc_msg.get_param()
+        if shares_id is None:
             return "请给我一个股票代码"
-        reqeust = self._requset + self.getLocation(shares_id) + shares_id
-        IoUtil.print("Start to send request %s%s\r\n" % (self._host, reqeust))
+        request = self._requset + self.getLocation(shares_id) + shares_id
+        IoUtil.print("Start to send request %s%s\r\n" % (self._host, request))
         conn = http.client.HTTPConnection(self._host)
-        conn.request("GET", reqeust)
+        conn.request("GET", request)
         response = conn.getresponse()
         status = response.status
         reason = response.reason
@@ -24,9 +27,8 @@ class SharesSearch:
             shares = Shares(response.read().decode('gbk'))
             rst = shares.get_string()
 
-        if rst == None:
-            rst = "机器人遇到了未知的问题！！！奔溃中"
-
+        if rst is None:
+            rst = "未查询到>>>%s<<<的结果" % shares_id
         return rst
 
     def getLocation(self,shares_id):

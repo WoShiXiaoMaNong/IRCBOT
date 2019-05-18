@@ -10,21 +10,25 @@ class ConfigReader:
 
     @classmethod
     def getMoudleName(cls,key):
-        return cls._getValue("moudle",key.strip())
+        return cls.__get_value("moudle",key.strip())
 
     @classmethod
     def getClassName(cls, key):
-        return cls._getValue("class", key.strip())
+        return cls.__get_value("class", key.strip())
 
     @classmethod
     def getCityId(cls, cityName):
-        return cls._getValue("cityMapping", cityName.strip())
+        return cls.__get_value("cityMapping", cityName.strip())
 
     @classmethod
-    def _getValue(cls,type,key):
+    def get_thread_pool_size(cls):
+        return int(cls.__get_value("thread_pool", "pool_size"))
+
+    @classmethod
+    def __get_value(cls, type, key):
         value = None
         try:
-            value = conf.get(type,key)
+            value = conf.get(type, key)
         except:
             value = None
         return value
