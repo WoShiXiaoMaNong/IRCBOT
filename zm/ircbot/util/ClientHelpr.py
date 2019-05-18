@@ -1,6 +1,6 @@
 from zm.ircbot.util.ircnet import Client
 from zm.ircbot.util.IOUtil import IoUtil
-from zm.ircbot.handler.Handler import MainHandler
+from zm.ircbot.handler.MainHandler import MainHandler
 class ClientHelper:
 
     def __init__(self,host,port):
@@ -21,7 +21,8 @@ class ClientHelper:
         while True:
             msg = self._client.getRecvMessage()
             if self.isChatMessate(msg):
-                mainHandler.excute(msg)
+                mainHandler.execute(msg)
+                IoUtil.print(msg)
             else:
                 IoUtil.print(msg)
     def sendMsg(self,msg):
@@ -31,7 +32,7 @@ class ClientHelper:
         return "PRIVMSG #%s :%s\r\n" %(self._client.getChanel(), msg)
 
     def isChatMessate(self, msg):
-        return msg.find('PRIVMSG') != -1
+        return msg.find('PRIVMSG') != -1 and len(msg.split('!~')) > 1
 
     def isSendToMe(self,msg):
         return msg.startswith(self._client.getNickName())

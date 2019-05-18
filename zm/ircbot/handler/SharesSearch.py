@@ -8,7 +8,7 @@ class SharesSearch:
         self._host = "hq.sinajs.cn"
         self._requset = "/list="
 
-    def search(self, shares_id):
+    def execute(self, shares_id):
         rst = "我不知道你在说什么"
         if shares_id == None:
             return "请给我一个股票代码"
@@ -56,5 +56,5 @@ class Shares:
                   ,self._shares_info[8],self.get_cheng_jiao(),self._shares_info[12],self._shares_info[13],self._shares_info[30],self._shares_info[31])
 if __name__ =="__main__":
     s = SharesSearch()
-    kk = s.search("600354")
+    kk = s.execute("600354")
     print (kk)

@@ -5,8 +5,7 @@ def main():
     host = "chat.freenode.net"
     port = 6667
     client = ClientHelper(host,port)
-    client.start("MrkkkBot","MrkkkBot","MrkkkBot","linuxba")
-   #client.sendPublicMsg("mrkkkbottest","test message")
+    client.start("MrkkkBot","MrkkkBot","MrkkkBot","mrkkkbottest")
 
 if __name__ == '__main__':
     main()

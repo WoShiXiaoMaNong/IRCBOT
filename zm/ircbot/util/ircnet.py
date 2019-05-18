@@ -2,8 +2,8 @@ import socket
 import queue
 import threading
 from zm.ircbot.util.IOUtil import IoUtil
-from zm.ircbot.ircthread.MsgSendThread import RecvThread
-from zm.ircbot.ircthread.MsgSendThread import SendThread
+from zm.ircbot.util.MsgSendThread import RecvThread
+from zm.ircbot.util.MsgSendThread import SendThread
 sendLock = threading.Lock()
 recvLock = threading.Lock()
 class Client:

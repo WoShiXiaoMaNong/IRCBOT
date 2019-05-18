@@ -10,7 +10,7 @@ class WeatherSerch:
         self._requset = "/data/sk/cityName.html"
 
 
-    def search(self,cityName):
+    def execute(self,cityName):
 
         rst = "我不知道你在说什么"
         cityId = ConfigReader.getCityId(cityName)
@@ -62,7 +62,7 @@ class Weatcher:
         return self._json[key]
 if __name__ == "__main__":
     ws = WeatherSerch()
-    data = ws.search("101030300")
+    data = ws.execute("101030300")
     print (data)
     t = Weatcher(data)
 
