@@ -21,7 +21,7 @@ class MainHandler:
         else:
             IoUtil.print("%s %s\r\n" % (irc_msg.get_from_nick_name(),  irc_msg.get_messge()))
 
-    def do_execute(self,msg):
+    def do_execute(self, msg):
         obj = None
         if msg.is_command_msg():
             handler_name = msg.get_method()
@@ -29,6 +29,7 @@ class MainHandler:
         if obj is None:
             obj = Handler()
         self.__ThreadPoolExecutor.submit(obj.do_execute, msg, self._clientHelper)
+
 
     def get_handler_ojb(self, handler_name):
         moudle_name = ConfigReader.getMoudleName(handler_name)
@@ -42,9 +43,3 @@ class MainHandler:
         else:
             return None
 
-
-
-if __name__ == "__main__":
-    print("ss")
-    kk = "s:s".split(':')
-    print (len(kk))
