@@ -19,7 +19,7 @@ class MainHandler:
             IoUtil.print("%s:>>>>%s<<<<<\r\n" % (irc_msg.get_from_nick_name(), irc_msg.get_messge()))
             self.do_execute(irc_msg)
         else:
-            IoUtil.print("%s %s" % (irc_msg.get_from_nick_name(),  irc_msg.get_messge()))
+            IoUtil.print("%s %s\r\n" % (irc_msg.get_from_nick_name(),  irc_msg.get_messge()))
 
     def do_execute(self,msg):
         obj = None
