@@ -12,8 +12,10 @@ class WeatherSerch:
 
     def search(self,cityName):
 
-        rst = "我也不知道你在说什么"
+        rst = "我不知道你在说什么"
         cityId = ConfigReader.getCityId(cityName)
+        if cityId == None:
+            return "我不认识" + cityName + ",无法查询。"
         reqeust = self._requset.replace("cityName", cityId)
         IoUtil.print("Start to send request %s%s\r\n" % (self._host, reqeust))
         conn = http.client.HTTPConnection(self._host)

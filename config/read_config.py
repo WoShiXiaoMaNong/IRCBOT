@@ -10,15 +10,21 @@ class ConfigReader:
 
     @classmethod
     def getMoudleName(cls,key):
-        return conf.get("moudle",key.strip())
+        return cls._getValue("moudle",key.strip())
 
     @classmethod
     def getClassName(cls, key):
-        return conf.get("class", key.strip())
+        return cls._getValue("class", key.strip())
 
     @classmethod
     def getCityId(cls, cityName):
-        return conf.get("cityMapping", cityName.strip())
+        return cls._getValue("cityMapping", cityName.strip())
 
-    def getValue(self,type,value):
-        v = ''
+    @classmethod
+    def _getValue(cls,type,key):
+        value = None
+        try:
+            value = conf.get(type,key)
+        except:
+            value = None
+        return value

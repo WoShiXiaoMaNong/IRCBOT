@@ -35,3 +35,6 @@ class ClientHelper:
 
     def isSendToMe(self,msg):
         return msg.startswith(self._client.getNickName())
+
+    def getNickName(self):
+        return self._client.getNickName()
