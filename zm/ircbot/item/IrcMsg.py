@@ -1,4 +1,7 @@
 import re
+from zm.ircbot.util.IOUtil import IoUtil
+
+
 class IrcMsg:
 
     def __init__(self,irc_msg_str,self_nick_name):
@@ -16,7 +19,10 @@ class IrcMsg:
         self.__command = Command(self.get_messge())
 
     def is_to_me(self):
-        return re.findall(self.__self_nick_name + "\s*:",self.__message) is not None
+        result = re.findall(self.__self_nick_name + "\s*:",self.__message)
+        IoUtil.debug("Message is %s\r\n" % self.__message)
+        IoUtil.debug("is to me? %s %s\r\n" %(result is not None, len(result) > 0))
+        return result is not None and len(result) > 0
 
     def get_messge(self):
         if self.is_to_me():
@@ -67,3 +73,10 @@ class Command:
         elif len(self._command_msg.split(':')) != 2:
             return False
         return True
+
+if __name__ == "__main__":
+    mes = "MrkkkBot  :tianqi:fsfasf"
+    s = "MrkkkBot"
+    result = re.findall(s+ "\s*:", mes)
+    print (result)
+    IoUtil.debug("is to me? %s %s\r\n" % (result is not None, len(result) > 0))
