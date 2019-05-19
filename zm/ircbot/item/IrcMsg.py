@@ -33,10 +33,10 @@ class IrcMsg:
         return self.__host_from.strip()
 
     def get_method(self):
-        return self.__command.get_method()
+        return self.__command.get_method().strip()
 
     def get_param(self):
-        return self.__command.get_param()
+        return self.__command.get_param().strip()
 
     def is_command_msg(self):
         return self.get_method() is not None and self.get_param() is not None
