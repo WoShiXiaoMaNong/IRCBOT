@@ -16,6 +16,10 @@ city_config.read(city_config_path,"utf-8")
 class ConfigReader:
 
     @classmethod
+    def get_debug_flag(cls):
+        return int(cls.__get_value(conf,"DEBUG_INFO",'debug'))
+
+    @classmethod
     def getMoudleName(cls,key):
         return cls.__get_value(conf,"moudle",key.strip())
 

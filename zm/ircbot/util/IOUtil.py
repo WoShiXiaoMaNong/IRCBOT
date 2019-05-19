@@ -1,4 +1,7 @@
 import time
+
+from config.read_config import ConfigReader
+
 class IoUtil:
 
     @classmethod
@@ -9,5 +12,6 @@ class IoUtil:
 
     @classmethod
     def debug(cls,msg):
-        timeStr = time.strftime('%H:%M:%S',time.localtime())
-        print ("Debug:" + timeStr +" "+ msg,end='')
+        if ConfigReader.get_debug_flag() == 1:
+            timeStr = time.strftime('%H:%M:%S',time.localtime())
+            print ("Debug:" + timeStr +" "+ msg,end='')
