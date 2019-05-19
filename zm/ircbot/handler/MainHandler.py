@@ -10,7 +10,7 @@ class MainHandler:
         self._clientHelper = client_helper
 
         pool_size = ConfigReader.get_thread_pool_size()
-        IoUtil.print("Init Thread Pool size (Handler) . size is %s\r\n" % pool_size)
+        IoUtil.print("Init Thread Pool(Handler) . size is %s\r\n" % pool_size)
         self.__ThreadPoolExecutor = concurrent.futures.ThreadPoolExecutor(pool_size)
 
     def execute(self, msg):

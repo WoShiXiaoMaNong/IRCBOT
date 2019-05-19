@@ -10,7 +10,7 @@ class ClientHelper:
         IoUtil.print("Start login\r\n")
         self._login(nickname, username, realname, chanel)
         IoUtil.print("Login finished\r\n")
-        IoUtil.print("Robot starting now!\r\n")
+        IoUtil.print("Robot running now!\r\n")
         self.__handle_message()
 
     def _login(self, nickname, username, realname, chanel):
