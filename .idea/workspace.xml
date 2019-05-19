@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31719041-b426-4742-a9ad-a81200d23ed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/zm/ircbot/handler/TranslateHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/handler/TranslateHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+            <state relative-caret-position="456">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/concurrent/futures/thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="229">
+              <caret line="80" column="61" lean-forward="true" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -148,8 +148,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="151" />
-    <option name="y" value="75" />
+    <option name="x" value="300" />
+    <option name="y" value="58" />
     <option name="width" value="1911" />
     <option name="height" value="1170" />
   </component>
@@ -367,15 +367,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="75" width="1911" height="1170" extended-state="0" />
+    <frame x="300" y="58" width="1911" height="1170" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27976507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27976507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291506" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.27027026" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34362933" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34362933" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291506" />
@@ -650,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zm/ircbot/handler/HandlerBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -666,8 +660,15 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/concurrent/futures/thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="229">
+          <caret line="80" column="61" lean-forward="true" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zm/ircbot/item/IrcMsg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
