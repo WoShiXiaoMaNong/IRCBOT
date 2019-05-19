@@ -3,6 +3,7 @@ import xml.sax
 import xml.sax.handler
 from zm.ircbot.util.IOUtil import IoUtil
 from zm.ircbot.handler.HandlerBase import Handler
+import urllib
 
 
 class TranslateHandler(Handler):
@@ -15,7 +16,7 @@ class TranslateHandler(Handler):
     def execute(self, irc_msg):
         rst = "我不知道你在说什么"
         target_word = irc_msg.get_param()
-        request = self.__request + target_word
+        request = self.__request + urllib.parse.quote(target_word)
         IoUtil.print("Start to send request %s%s\r\n" % (self.__host, request))
         conn = http.client.HTTPConnection(self.__host)
         conn.request("GET", request)
@@ -24,10 +25,10 @@ class TranslateHandler(Handler):
         reason = response.reason
         IoUtil.print("Request result. Status %s,reason:%s\r\n" % (status, reason))
         if status == 200:
-            data_xml =  response.read().decode('utf-8')
+            data_xml = response.read().decode('utf-8')
             xh = TranslateXmlHandler()
-            xml.sax.parseString(data_xml,xh)
-            rst = xh.get_string().replace("\r\n",":")+ "\r\n"
+            xml.sax.parseString(data_xml, xh)
+            rst = xh.get_string()
             print(rst)
         return rst
 
@@ -50,5 +51,8 @@ class TranslateXmlHandler(xml.sax.ContentHandler):
         return self.__string
 
 if __name__ == "__main__":
-    a = TranslateHandler()
-    print (a.execute('hello'))
+    s = 'Mrkkk  : test : 234'
+    n = "Mrkkk"
+    s2 = re.findall(n + "\s+:",s)
+
+    print (s2)

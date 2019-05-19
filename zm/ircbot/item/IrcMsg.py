@@ -16,7 +16,7 @@ class IrcMsg:
         self.__command = Command(self.get_messge())
 
     def is_to_me(self):
-        return self.__message.find(self.__self_nick_name + ':') != -1
+        return re.findall(self.__self_nick_name + "\s*:",self.__message) is not None
 
     def get_messge(self):
         if self.is_to_me():
@@ -33,10 +33,16 @@ class IrcMsg:
         return self.__host_from.strip()
 
     def get_method(self):
-        return self.__command.get_method()
+        method = self.__command.get_method()
+        if method is None:
+            return None
+        return method.strip()
 
     def get_param(self):
-        return self.__command.get_param()
+        param = self.__command.get_param()
+        if param is None:
+            return None
+        return param.strip()
 
     def is_command_msg(self):
         return self.get_method() is not None and self.get_param() is not None
