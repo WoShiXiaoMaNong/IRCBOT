@@ -1,6 +1,5 @@
 import os
 import configparser
-from zm.ircbot.util.IOUtil import IoUtil
 
 cur_path = os.path.dirname(os.path.realpath(__file__))
 config_path = os.path.join(cur_path,'config.ini')
@@ -64,6 +63,7 @@ class ConfigReader:
         return cls.__get_value(conf,"IRC_INFO", "chanel")
     @classmethod
     def __get_value(cls,config, type, key):
+        from zm.ircbot.util.IOUtil import IoUtil
         value = None
         try:
             value = config.get(type, key)

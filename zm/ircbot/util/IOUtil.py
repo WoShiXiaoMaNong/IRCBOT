@@ -1,7 +1,6 @@
 import time
 
 from config.read_config import ConfigReader
-
 class IoUtil:
 
     @classmethod
